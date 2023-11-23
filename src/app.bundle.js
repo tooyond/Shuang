@@ -237,6 +237,7 @@ Shuang.resource.dict.list = Object.keys(Shuang.resource.dict)
 
 Shuang.resource.schemeList = {
   ziranma: '自然码',
+  yangzai: '阳仔',
   sougou: '搜狗双拼',
   weiruan: '微软双拼',
   xiaohe: '小鹤双拼',
@@ -483,7 +484,7 @@ Shuang.app.setting = {
       key.classList.remove('answer')
     }
     if (this.config.showKeys === 'false') return
-    const qwerty = 'qwertyuiopasdfghjkl;zxcvbnm'
+    const qwerty = 'pyfgcrlaoeuidhtns;qjkxbmwvz' 
     for (const [sheng, yun] of Shuang.core.current.scheme) {
       keys[qwerty.indexOf(sheng)].classList.add('answer')
       keys[qwerty.indexOf(yun)].classList.add('answer')
@@ -525,7 +526,7 @@ Shuang.app.setting = {
     for (const key of keys) {
       key.classList.remove('pressed')
     }
-    const qwerty = 'qwertyuiopasdfghjkl;zxcvbnm'
+    const qwerty = 'pyfgcrlaoeuidhtns;qjkxbmwvz' 
     const index = qwerty.indexOf(k.toLowerCase())
     if (index === -1) return
     keys[index].classList.add('pressed')
@@ -694,7 +695,7 @@ Shuang.app.action = {
 
     /** Simulate Keyboard */
     const keys = $$('.key')
-    const qwerty = 'qwertyuiopasdfghjkl;zxcvbnm'
+    const qwerty = 'pyfgcrlaoeuidhtns;qjkxbmwvz' 
     for (let i = 0; i < keys.length; i++) {
       keys[i].addEventListener('click', () => {
         const event = new KeyboardEvent('keyup', { key: qwerty[i].toUpperCase()})

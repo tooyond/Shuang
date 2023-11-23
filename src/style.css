@@ -120,14 +120,17 @@ body {
   opacity: 0.2;
 }
 
+.keyboard .keys .row-1 {
+  /** 90 / 1928 * 700 */
+  margin-left: 194px;
+}
+
 .keyboard .keys .row-2 {
   /** 90 / 1928 * 700 */
-  margin-left: 33px;
 }
 
 .keyboard .keys .row-3 {
   /** 180 / 1928 * 700 */
-  margin-left: 65px;
 }
 
 .keyboard .keys .key {

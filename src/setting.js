@@ -5,7 +5,7 @@ Shuang.app.setting = {
   reload() {
     /** Reading Storage or Using Default **/
     this.config = {
-      scheme: readStorage('scheme') || 'ziranma',
+      scheme: readStorage('scheme') || 'yangzai',
       mode: readStorage('mode') || 'all-random',
       showPic: readStorage('showPic') || 'true',
       darkMode: readStorage('darkMode') || detectDarkMode().toString(),
@@ -121,7 +121,7 @@ Shuang.app.setting = {
       key.classList.remove('answer')
     }
     if (this.config.showKeys === 'false') return
-    const qwerty = 'qwertyuiopasdfghjkl;zxcvbnm'
+    const qwerty = 'pyfgcrlaoeuidhtns;qjkxbmwvz' 
     for (const [sheng, yun] of Shuang.core.current.scheme) {
       keys[qwerty.indexOf(sheng)].classList.add('answer')
       keys[qwerty.indexOf(yun)].classList.add('answer')
@@ -163,7 +163,7 @@ Shuang.app.setting = {
     for (const key of keys) {
       key.classList.remove('pressed')
     }
-    const qwerty = 'qwertyuiopasdfghjkl;zxcvbnm'
+    const qwerty = 'pyfgcrlaoeuidhtns;qjkxbmwvz' 
     const index = qwerty.indexOf(k.toLowerCase())
     if (index === -1) return
     keys[index].classList.add('pressed')

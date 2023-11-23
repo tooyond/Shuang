@@ -127,7 +127,7 @@ Shuang.app.action = {
 
     /** Simulate Keyboard */
     const keys = $$('.key')
-    const qwerty = 'qwertyuiopasdfghjkl;zxcvbnm'
+    const qwerty = 'pyfgcrlaoeuidhtns;qjkxbmwvz' 
     for (let i = 0; i < keys.length; i++) {
       keys[i].addEventListener('click', () => {
         const event = new KeyboardEvent('keyup', { key: qwerty[i].toUpperCase()})

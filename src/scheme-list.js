@@ -7,6 +7,7 @@
 
 Shuang.resource.schemeList = {
   ziranma: '自然码',
+  yangzai: '阳仔',
   sougou: '搜狗双拼',
   weiruan: '微软双拼',
   xiaohe: '小鹤双拼',
