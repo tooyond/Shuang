@@ -9,3 +9,6 @@ package-lock.json
 
 # Release
 dist
+resources/~$双拼键位图.xlsx
+build/
+index.html
